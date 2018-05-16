@@ -1,0 +1,83 @@
+TEST DE L'INSERTION ET DE LA FUSION DES NODES
+
+'-- 13
+    |-- 12
+    |-- 8
+    |   '-- 7
+    '-- 9
+        |-- 5
+        '-- 4
+            '-- 3
+
+TEST DE NODE.FINDVALUE()
+
+-1 -1 -1 3 4 5 -1 7 8 9 -1 -1 12 13 -1 
+
+TEST DE NODE.DELETE()
+
+'-- 12
+
+
+'-- 8
+    '-- 7
+
+
+'-- 13
+    |-- 9
+    '-- 4
+        '-- 3
+
+TEST DU SORT
+
+13 9 4 3
+
+TEST DE MONCEAU.INSERT(), FUSION() ET PRINT()
+
+
+
+ordre : 0
+'-- 53
+
+
+ordre : 2
+'-- 33
+    |-- 24
+    '-- 23
+        '-- 23
+
+
+ordre : 3
+'-- 99
+    |-- 12
+    |-- 77
+    |   '-- 12
+    '-- 21
+        |-- 17
+        '-- 9
+            '-- 5
+
+TEST DE MONCEAU.DELETE()
+
+Suppression de 1 :false
+Suppression de 12 :true
+Resultat :
+
+
+ordre : 0
+'-- 77
+
+
+ordre : 1
+'-- 99
+    '-- 53
+
+
+ordre : 3
+'-- 33
+    |-- 24
+    |-- 23
+    |   '-- 23
+    '-- 21
+        |-- 17
+        '-- 9
+            '-- 5
